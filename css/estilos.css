@@ -1,0 +1,369 @@
+
+/*ESTILOS GENERALES*/
+
+/*IMPORTADOS*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Staatliches&display=swap');
+
+/* ESTILOS BODY */
+body{
+    font-family: 'Staatliches', cursive;
+    background-color: orange;
+    
+}
+
+/* ESTILOS HEADER */
+h1{ 
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    border: groove 2px white;
+    border-radius: 3px;
+    background-color: orange;
+    }
+
+
+
+/* ESTILOS MAIN */
+
+nav{
+    width: 100%;
+    background-color: orange;
+    font-size: larger;
+    text-align: center;
+    font-weight:lighter;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+ul li{
+    width:200px;
+    margin: 10px;
+    padding: 15px;
+    border: 5px white;
+    background-color: white;
+    list-style: none;
+   }
+
+h2{
+   font-family: 'Staatliches', cursive;
+   color:white;
+   font-size: 3.5rem;
+   text-align: center;
+   text-decoration: underline;
+}
+
+h3 {
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Staatliches', cursive;
+    background-color:firebrick;
+    color: rgba(255, 255, 0, 0.71);
+    text-align: center;
+}
+
+form{
+    color: beige;
+    border: inset 2px firebrick;
+    background-color: firebrick;
+    font-size: 1rem;
+    border-radius: 3px;
+
+}
+
+/* ESTILOS FOOTER */
+
+footer{
+    color: beige;
+    padding: 30px;
+}
+
+/*ID*/
+
+
+#uno{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+#dos{
+    width: 500px;
+    height: 500px;
+}
+
+
+/*Clases*/
+
+.imageburguer{
+    width: 500px;
+    text-align: center;
+}
+
+
+
+/*BOX MODEL*/
+
+.ancho {
+    width: 100%
+}
+
+.alto{
+    height: 550px;
+}
+
+img {
+    width: 100%;
+}
+
+.margen {
+    margin-top: 20px;
+    margin-left: 110px ;
+    margin-right: 20px;
+    margin-bottom: 20px; ;
+}
+.margeninterno {
+    padding-top: 30px ;
+    padding-left: 50px ;
+    padding-right: 50px;
+    padding-bottom: 30px ;
+}
+
+.borde {
+    border-top: 2px;
+    border-right: 2px;
+    border-left: 2px;
+    border-bottom: 2px ;
+    color: black;
+}
+
+
+/* FLEX BOX */
+
+.is-flex{
+    display: flex;
+}
+
+.is-flex-flow{
+    flex-flow: nowrap;
+  
+}
+
+.is-justify-center{
+justify-content: center;
+}
+
+.is-aling-center{
+    align-items: center;
+}
+
+.img-wrapper{
+    width: 60%;
+    padding: 20px;
+    border: inset 2px firebrick;
+    background-color: firebrick;
+    border-radius: 3px;
+}
+
+.texto-wrapper{
+    width: 40%;
+    padding: 20px;
+}
+
+.flex-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**.TRACISIONES.*/ 
+.transicion{
+    transition: width 1s;
+    }
+.transicion:hover {
+    width: 400px;
+    background-color: rgb(246, 222, 179);  
+}
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+/*DESKTOP*/
+@media (min-width: 1024px) {
+    
+    .grid-area1{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 33,3% 33,3% 33,3%;
+        gap: 100px;
+    }
+    
+    .grid-area2{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        gap: 100px;
+    }
+    
+    .grid-area3{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        gap: 100px;
+    }
+    .img1{
+        grid-area: img1;
+    }
+    
+    .img2{
+        grid-area: img2;
+    }
+    
+    .img3{
+        grid-area: img3;
+    }
+    
+    .img4{
+        grid-area: img4;
+    }
+    
+    .img5{
+        grid-area: img5;
+    }
+    
+    .img6{
+        grid-area: img6;
+    }
+}
+
+
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 1023px){
+    
+    .grid-area1{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 33,3% 33,3% 33,3%;
+        gap: 100px;
+    }
+    
+    .grid-area2{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        gap: 100px;
+    }
+    
+    .grid-area3{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        gap: 100px;
+    }
+    .img1{
+        grid-area: img1;
+    }
+    
+    .img2{
+        grid-area: img2;
+    }
+    
+    .img3{
+        grid-area: img3;
+    }
+    
+    .img4{
+        grid-area: img4;
+    }
+    
+    .img5{
+        grid-area: img5;
+    }
+    
+    .img6{
+        grid-area: img6;
+    }
+}
+
+/*SMARTPHONE*/
+
+@media (max-width: 480px){
+    .grid-area1{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 33,3% 33,3% 33,3%;
+        gap: 100px;
+    }
+    
+    .grid-area2{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        gap: 100px;
+    }
+    
+    .grid-area3{
+        display: grid;
+        grid-template-areas: 
+        "img1" 
+        "img2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100%;
+        gap: 100px;
+    }
+    .img1{
+        grid-area: img1;
+    }
+    
+    .img2{
+        grid-area: img2;
+    }
+    
+    .img3{
+        grid-area: img3;
+    }
+    
+    .img4{
+        grid-area: img4;
+    }
+    
+    .img5{
+        grid-area: img5;
+    }
+    
+    .img6{
+        grid-area: img6;
+    }
+}
+
+
